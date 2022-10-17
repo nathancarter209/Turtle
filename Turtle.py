@@ -5,17 +5,11 @@ def pause():
     for i in range(100):
         my_turtle_cursor.left(90)
 
-def write_Nobo_inside_heart():
+def write_Hello_inside_heart():
     my_turtle_cursor.penup()
-    my_turtle_cursor.goto(-90, 15)
+    my_turtle_cursor.goto(-50, 15)
     my_turtle_cursor.pencolor("Red")
-    my_turtle_cursor.write("Naba", font=("Amatic SC", 74, "bold"))
-
-def write_Item_inside_heart():
-    my_turtle_cursor.penup()
-    my_turtle_cursor.goto(-30, 15)
-    my_turtle_cursor.pencolor("Red")
-    my_turtle_cursor.write("Item", font=("Amatic SC", 74, "bold"))
+    my_turtle_cursor.write("Hello", font=("Amatic SC", 74, "bold"))
 
 def draw_complete_heart():
     my_turtle_cursor.left(140)
@@ -48,7 +42,6 @@ my_turtle_cursor.speed(70)
 
 draw_complete_heart()
 
-write_Nobo_inside_heart()
-write_Item_inside_heart()
+write_Hello_inside_heart()
 
 turtle.done()
